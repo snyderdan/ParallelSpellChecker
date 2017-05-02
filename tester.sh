@@ -7,7 +7,7 @@ fi
 
 funct=$1
 
-iterations=10
+iterations=100
 test_words=("hello" "world" "banana" "calibration" "something" "to" "how" \
 			"now" "brown" "cow" "pretentious" "tomatoes" "tomatos" \
 			"wubalubadubdub" "ch" "tq" "y")

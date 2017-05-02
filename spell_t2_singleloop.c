@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
 
 // winner is static, division of 512
 int chunk = wl_size / 512;
-#pragma omp parallel for num_threads (2) private(j, hash) schedule (static, chunk)
+#pragma omp parallel for private(j, hash) schedule (static, chunk)
 	for (i = 0; i < wl_size; i++) {
 		for (j = 0; j < num_hf; j++) {
 			hash = hf[j] (get_word(wl, i));
